@@ -8,7 +8,7 @@ from yah_urlmaker import urladdress
 
 off = 0      # valore di partenza
 count = 250  # valore di step massimo
-my_conn = create_engine("mysql+mysqldb://root:stefano@192.168.15.194:3306/pyfinance")
+#my_conn = create_engine("mysql+mysqldb://root:stefano@192.168.15.194:3306/pyfinance")
 headers = {'User-agent': 'Mozilla/5.0'}
 dfs = pd.DataFrame()
 
@@ -45,5 +45,5 @@ settore = sector_find(sector)
 url = urladdress(regione, settore)
 url1 = url[0]
 limite = url[1]
-ticker_insert(url1, limite, off, count)
+#ticker_insert(url1, limite, off, count)
 print("Terminato")
